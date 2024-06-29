@@ -2,7 +2,7 @@
 	"name": "pixteroid",
 	"displayName": "Pixteroid",
 	"version": "0.0.1a",
-	"description": "Image upscaling module",
+	"description": "Image upscaling api",
 	"main": "./dist/pixteroid.js",
 	"exports": {
 		"import": "./dist/pixteroid.js",
@@ -37,15 +37,24 @@
 		"watch": "tsc --watch",
 		"clean": "cls && rimraf dist",
 		"deploy": "yarn build && yarn publish --access public && git push",
-		"postinstall": "./dist/bin/setup.js"
+		"postinstall": "node ./dist/bin/setup.js"
 	},
-	"keywords": [],
+	"keywords": [
+		"image",
+		"upscale",
+		"esrgan",
+		"real-esrgan",
+		"AI",
+		"model",
+		"deeplearning"
+	],
 	"dependencies": {
 		"decompress": "4.2.1"
 	},
 	"devDependencies": {
-		"@types/decompress": "^4.2.7",
+		"@types/decompress": "4.2.7",
 		"@types/node": "latest",
+		"glob": "10.4.2",
 		"rimraf": "5.0.5",
 		"ts-node": "10.9.2",
 		"typescript": "5.4.5"

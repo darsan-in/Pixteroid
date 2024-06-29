@@ -46,8 +46,6 @@ async function _getLatestRelease(
 }
 
 function _downloadFile(sourceUrl: string, to: string, cb: Function): void {
-	console.log("fetching: " + sourceUrl);
-
 	get(sourceUrl, (response) => {
 		if (response.statusCode === 200) {
 			const fileStream = createWriteStream(to);
@@ -75,21 +73,37 @@ function _extractFile(archive: string, destPath: string): void {
 	decompress(archive, destPath, {
 		strip: 1,
 	}).then(() => {
-		console.log("ncnn-CLI installation complete");
-
 		rmSync(archive, { recursive: true });
-		process.exit(1);
 	});
 }
 
 function install(url: string, destPath: string): void {
-	const tempFilePath: string = "temp.zip";
+	const tempFilePath: string = join(__dirname, "temp.zip");
 
 	//mkdir
 	mkdirSync(destPath, { recursive: true });
 
+	console.log("fetching: " + url);
+
 	_downloadFile(url, tempFilePath, () => {
 		_extractFile(tempFilePath, destPath);
+		console.log("ncnn-CLI installation complete.");
+	});
+
+	_downloadModels(destPath);
+}
+
+function _downloadModels(destPath: string): void {
+	const sourceUrl: string =
+		"https://github.com/iamspdarsan/pixteroid/releases/download/0.0.0/model.weights.zip";
+
+	const tempFilePath: string = join(__dirname, "models.zip");
+
+	const modelPath: string = join(destPath, "models");
+
+	_downloadFile(sourceUrl, tempFilePath, () => {
+		_extractFile(tempFilePath, modelPath);
+		console.log("Model weights downloaded.");
 	});
 }
 
