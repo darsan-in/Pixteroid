@@ -1,0 +1,53 @@
+{
+	"name": "pixteroid",
+	"displayName": "Pixteroid",
+	"version": "0.0.1a",
+	"description": "Image upscaling module",
+	"main": "./dist/pixteroid.js",
+	"exports": {
+		"import": "./dist/pixteroid.js",
+		"require": "./dist/pixteroid.js",
+		"types": "./dist/types/pixteroid.d.ts"
+	},
+	"files": [
+		"dist"
+	],
+	"directories": {
+		"lib": "./dist/lib"
+	},
+	"preferGlobal": true,
+	"bin": {
+		"pixteroid": "./dist/bin/setup.js"
+	},
+	"repository": "https://github.com/cresteem/pixteroid",
+	"bugs": {
+		"url": "https://github.com/cresteem/pixteroid/issues"
+	},
+	"author": "DARSAN <darsan@cresteem.com>",
+	"maintainers": [
+		"DARSAN <darsan@cresteem.com>"
+	],
+	"license": "Apache-2.0",
+	"private": false,
+	"scripts": {
+		"dev": "rimraf dist && tsc -p tscdev.json",
+		"dr": "cls && yarn dev && yarn rp",
+		"rp": "node ./dist/pixteroid.js",
+		"build": "cls && rimraf dist && tsc -p tsconfig.json",
+		"watch": "tsc --watch",
+		"clean": "cls && rimraf dist",
+		"deploy": "yarn build && yarn publish --access public && git push",
+		"postinstall": "./dist/bin/setup.js"
+	},
+	"keywords": [],
+	"dependencies": {
+		"decompress": "4.2.1"
+	},
+	"devDependencies": {
+		"@types/decompress": "^4.2.7",
+		"@types/node": "latest",
+		"rimraf": "5.0.5",
+		"ts-node": "10.9.2",
+		"typescript": "5.4.5"
+	}
+}

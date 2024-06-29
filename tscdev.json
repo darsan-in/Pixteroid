@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"baseUrl": ".",
+		"rootDir": ".",
+		"outDir": "dist",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noFallthroughCasesInSwitch": true,
+		"strict": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"alwaysStrict": true,
+		"strictFunctionTypes": true,
+		"allowUmdGlobalAccess": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"preserveConstEnums": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+		"pretty": false,
+		"noUnusedLocals": true,
+		"noImplicitOverride": false,
+		"noUnusedParameters": true,
+		"noUncheckedIndexedAccess": false,
+		"sourceMap": false,
+		"removeComments": true,
+		"skipLibCheck": true
+	},
+	"exclude": [
+		"node_modules",
+		"test",
+		"jest.config.ts"
+	]
+}

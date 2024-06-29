@@ -1,0 +1,15 @@
+{
+  
+  "bracketSameLine": true,
+  "semi": true,
+  "proseWrap": "always",
+  "printWidth": 75,
+  "arrowParens": "always",
+  "singleAttributePerLine": true,
+  "trailingComma": "all",
+  "embeddedLanguageFormatting": "auto",
+  "experimentalTernaries": true,
+  "parser": "typescript",
+  "tabWidth": 2,
+  "useTabs": true
+}
