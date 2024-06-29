@@ -1,7 +1,7 @@
 {
 	"name": "pixteroid",
 	"displayName": "Pixteroid",
-	"version": "0.0.1a",
+	"version": "0.0.1-a",
 	"description": "Image upscaling api",
 	"main": "./dist/pixteroid.js",
 	"exports": {
