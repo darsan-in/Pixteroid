@@ -21,17 +21,20 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install --production node-html-parser marked @octokit/rest
+          mkdir -p temp && cd temp
+          yarn init -y
+          yarn add node-html-parser marked @octokit/rest -S
 
       - name: Download Hero program
         run: |
-          curl -o update-meta.js https://raw.githubusercontent.com/darsan-in/.github/main/utils/update-meta.js
+          curl -o temp/update-meta.js https://raw.githubusercontent.com/darsan-in/.github/main/utils/update-meta.js
 
       - name: Update meta
         env:
           GITHUB_TOKEN: ${{ secrets.META_UPDATE_KEY }}
           REPO_META: ${{ github.repository }}
         run: |
+          cd temp
           node update-meta.js
 
       - name: Commit and push changes
