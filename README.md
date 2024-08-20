@@ -1,50 +1,31 @@
 <div align="center">
 
-# [Title] - [short desc]
+# Pixteroid - AI-Powered Image Upscaling and Restorative API
 
-<p id="intro">[This is a placeholder paragraph. Here some introductory text or describe the content that will eventually go in this section. This text is meant to give a sense of how the final content will look in the design.]
-</p>
+<p id="intro">Pixteroid is a Node.js API designed for efficient image upscaling and restoration, powered by AI and utilizing the NCNN framework. It employs Real-ESRGAN and ESRGAN model weights to upscale and restore images, providing three distinct levels of detail and size customization to suit various needs.</p>
+
 
 ### Supported Platforms
 
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)]()
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)]()
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)]()
 [![Node JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)]()
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)]()
+
 
 ---
 
-[uname-holder/reponame-holder] [npm-name-holder] [wf-holder] - for test&build
 
 <p>
 
 <span>
-  <a href="https://github.com/uname-holder/reponame-holder/commits/main">
-    <img src="https://img.shields.io/github/last-commit/uname-holder/reponame-holder?display_timestamp=committer&style=for-the-badge&label=Updated%20On" alt="GitHub last commit"/>
+  <a href="https://github.com/darsan-in/Pixteroid/commits/main">
+    <img src="https://img.shields.io/github/last-commit/darsan-in/Pixteroid?display_timestamp=committer&style=for-the-badge&label=Updated%20On" alt="GitHub last commit"/>
   </a>
 </span>
 
 <span>
   <a href="">
-    <img src="https://img.shields.io/github/commit-activity/m/uname-holder/reponame-holder?style=for-the-badge&label=Commit%20Activity" alt="GitHub commit activity"/>
-  </a>
-</span>
-
-</p>
-
-<p>
-
-<span>
-  <a href="https://github.com/uname-holder/reponame-holder/actions/workflows/wf-holder.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/uname-holder/reponame-holder/wf-holder.yml?style=for-the-badge&label=Build%20Status" alt="GitHub Actions Build Status"/>
-  </a>
-</span>
-
-<span>
-  <a href="https://github.com/uname-holder/reponame-holder/actions/workflows/wf-holder.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/uname-holder/reponame-holder/wf-holder.yml?style=for-the-badge&label=Test%20Status" alt="GitHub Actions Test Status"/>
+    <img src="https://img.shields.io/github/commit-activity/m/darsan-in/Pixteroid?style=for-the-badge&label=Commit%20Activity" alt="GitHub commit activity"/>
   </a>
 </span>
 
@@ -56,13 +37,13 @@
 
 <span>
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/uname-holder/reponame-holder?style=for-the-badge&label=License" alt="GitHub License"/>
+    <img src="https://img.shields.io/github/license/darsan-in/Pixteroid?style=for-the-badge&label=License" alt="GitHub License"/>
   </a>
 </span>
 
 <span>
-  <a href="https://github.com/uname-holder/reponame-holder/releases">
-    <img src="https://img.shields.io/github/v/release/uname-holder/reponame-holder?include_prereleases&sort=date&display_name=tag&style=for-the-badge&label=Latest%20Version" alt="GitHub Release"/>
+  <a href="https://github.com/darsan-in/Pixteroid/releases">
+    <img src="https://img.shields.io/github/v/release/darsan-in/Pixteroid?include_prereleases&sort=date&display_name=tag&style=for-the-badge&label=Latest%20Version" alt="GitHub Release"/>
   </a>
 </span>
 
@@ -71,8 +52,8 @@
 <p>
 
 <span>
-  <a href="https://www.codefactor.io/repository/github/uname-holder/reponame-holder/issues/main">
-    <img src="https://img.shields.io/codefactor/grade/github/uname-holder/reponame-holder?style=for-the-badge&label=Code%20Quality%20Grade" alt="CodeFactor Grade"/>
+  <a href="https://www.codefactor.io/repository/github/darsan-in/Pixteroid/issues/main">
+    <img src="https://img.shields.io/codefactor/grade/github/darsan-in/Pixteroid?style=for-the-badge&label=Code%20Quality%20Grade" alt="CodeFactor Grade"/>
   </a>
 </span>
 
@@ -84,13 +65,13 @@
 
 <span>
   <a href="">
-    <img src="https://img.shields.io/npm/d18m/npm-name-holder?style=for-the-badge&label=Downloads%20On%20NPM" alt="NPM Downloads"/>
+    <img src="https://img.shields.io/npm/d18m/pixteroid?style=for-the-badge&label=Downloads%20On%20NPM" alt="NPM Downloads"/>
   </a>
 </span>
 
 <span>
   <a href="">
-    <img src="https://img.shields.io/github/stars/uname-holder/reponame-holder?style=for-the-badge&label=Stars" alt="GitHub Repo stars"/>
+    <img src="https://img.shields.io/github/stars/darsan-in/Pixteroid?style=for-the-badge&label=Stars" alt="GitHub Repo stars"/>
   </a>
 </span>
 
@@ -131,14 +112,20 @@
 
 ## Features and Benefits ✨
 
-- [f1]
-- [f2]
-- [fn]
+* **AI-Powered Upscaling and Restoration**: Leverages AI-powered Real-ESRGAN and ESRGAN models to upscale and restore images with enhanced quality.
+* **Multiple Detail Levels**: Offers three levels of detail to cater to different use cases, from quick previews to high-resolution prints.
+* **Custom Size Scaling**: Supports custom size scaling to fit specific dimensions while preserving image quality.
+* **Efficient Performance**: Built on the NCNN framework, ensuring optimized performance across different platforms.
+* **Simple Integration**: Easily integrate into any Node.js project with straightforward API calls.
+* **Open Source**: Fully open-source, with ongoing updates and community contributions.
 
 ## Use Cases ✅
-
-- [usecase 1]
-- [use case 2]
+* **Graphic Design**: Enhance and restore low-resolution images for use in high-quality designs.
+* **E-commerce**: Automatically upscale and restore product images for better visual appeal.
+* **Print Media**: Prepare and restore images for print without losing detail, even from smaller sources.
+* **AI Research**: Utilize advanced upscaling and restoration models for experimental and research purposes.
+* **Web Development**: Improve and restore image quality on websites with minimal load time impact.
+* **Photography**: Restore and enhance old or low-resolution photographs.
 
 ---
 
@@ -158,30 +145,61 @@ Thank you for being part of this journey. Your support means the world to us. �
 
 ## Installation - Step-by-Step Guide 🪜
 
-[Installation instructions here]
-
-- **Step 1:**
-- **Step 2:**
-- **Step 3:**
-- **Step 4:**
-- **Step 5:**
+- **Step 1:** Install using npm.
+```bash
+npm install pixteroid
+```
+- **Step 2:** Follow Demo repository - [pixteroid-demo](https://github.com/darsan-in/pixteroid-demo)
 
 ## Usage
+#### Upscale single image at a time.
+```js
+const { upscale } = require("pixteroid");
+const { join, relative } = require("path");
 
-- [purpose heading]
-  [Demonstration here]
+const imagePath = "image-samples/0200.png";
+const outputPath = join("single-output", relative(process.cwd(), imagePath));
+const level = "level1"; //level1 or level2 or level3 - low to higher level
 
-```bash
-demo
+upscale(imagePath, outputPath, level)
+  .then(() => {
+    console.log("done");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 ```
+
+#### Upscale multiple images asynchronously.
+```js
+const { globSync } = require("glob");
+const { upscaleAll } = require("pixteroid");
+
+/* only 50 samples taken by slicing */
+const imagePaths = globSync("image-samples/**.jpg").slice(0, 50);
+const destinationPath = "output-samples";
+const level = "level1"; //level1 or level2 or level3 - low to higher level
+const batchSize = 2; //This is optional parameter def=2
+
+upscaleAll(imagePaths, destinationPath, level, batchSize)
+  .then(() => {
+    console.log("done");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
 
 ## In-Action 🤺
 
-[video] or [gif] or [image]
+![pixteroid result 1](in-action/result-1.png)
+![pixteroid result 2](in-action/result-2.png)
+![pixteroid result 3](in-action/result-3.png)
 
 ## License ©️
 
-This project is licensed under the [Apache License 2.0 or GNU General Public License v3.0 or MIT](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ## Contributing to Our Project 🤝
 
@@ -197,7 +215,7 @@ Thank you for being part of this journey!
 
 ## Website 🌐
 
-<a id="url" href="https://darsan.in">[https://darsan.in]</a>
+<a id="url" href="https://www.npmjs.com/package/pixteroid">npmjs - pixteroid</a>
 
 ## Contact Information
 
@@ -205,7 +223,7 @@ For any questions, please reach out via hello@darsan.in or [LinkedIn](https://ww
 
 ## Credits 🙏🏻
 
-[credits to lib maintainers/creators]
+I would like to extend our gratitude to [Xintao](https://github.com/xinntao) for implementing Real-ESRGAN with the NCNN framework. Special thanks to Tencent for creating the NCNN framework, a high-performance neural network inference computing framework optimized for mobile platforms. NCNN is designed with mobile deployment in mind, is cross-platform, and runs faster than all known open-source frameworks on mobile CPUs. It is currently used in various Tencent applications, such as QQ, Qzone, WeChat, and Pitu.
 
 ---
 
@@ -278,10 +296,26 @@ For any questions, please reach out via hello@darsan.in or [LinkedIn](https://ww
 #### Topics
 
 <ul id="keywords">
-
-<li>A</li>
-<li>B</li>
-<li>C</li>
-<li>D</li>
-
+<li>image upscaling</li>
+<li>image restoration</li>
+<li>AI-powered</li>
+<li>Node.js image API</li>
+<li>NCNN framework</li>
+<li>Real-ESRGAN</li>
+<li>ESRGAN</li>
+<li>high-resolution images</li>
+<li>AI image processing</li>
+<li>detail enhancement</li>
+<li>custom image scaling</li>
+<li>open-source</li>
+<li>graphic design tools</li>
+<li>e-commerce tools</li>
+<li>web development</li>
+<li>photography enhancement</li>
+<li>print media</li>
+<li>AI research</li>
+<li>image quality</li>
+<li>scaling algorithms</li>
+<li>API integration</li>
+<li>performance optimization</li>
 </ul>
