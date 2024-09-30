@@ -1,62 +1,78 @@
 {
-	"name": "pixteroid",
-	"displayName": "Pixteroid",
-	"version": "1.0.1",
-	"description": "Image upscaling api",
-	"main": "./dist/pixteroid.js",
-	"exports": {
-		"import": "./dist/pixteroid.js",
-		"require": "./dist/pixteroid.js",
-		"types": "./dist/types/pixteroid.d.ts"
-	},
-	"files": [
-		"dist"
-	],
-	"directories": {
-		"lib": "./dist/lib"
-	},
-	"preferGlobal": true,
-	"bin": {
-		"pixteroid": "./dist/bin/setup.js"
-	},
-	"repository": "https://github.com/cresteem/pixteroid",
-	"bugs": {
-		"url": "https://github.com/cresteem/pixteroid/issues"
-	},
-	"author": "DARSAN <darsan@cresteem.com>",
-	"maintainers": [
-		"DARSAN <darsan@cresteem.com>"
-	],
-	"license": "Apache-2.0",
-	"private": false,
-	"scripts": {
-		"dev": "rimraf dist && tsc -p tscdev.json",
-		"dr": "cls && yarn dev && yarn rp",
-		"rp": "node ./dist/pixteroid.js",
-		"build": "cls && rimraf dist && tsc -p tsconfig.json",
-		"watch": "tsc --watch",
-		"clean": "cls && rimraf dist",
-		"deploy": "yarn build && yarn publish --access public && git push",
-		"postinstall": "node ./dist/bin/setup.js"
-	},
-	"keywords": [
-		"image",
-		"upscale",
-		"esrgan",
-		"real-esrgan",
-		"AI",
-		"model",
-		"deeplearning"
-	],
-	"dependencies": {
-		"decompress": "4.2.1"
-	},
-	"devDependencies": {
-		"@types/decompress": "4.2.7",
-		"@types/node": "latest",
-		"glob": "10.4.2",
-		"rimraf": "5.0.5",
-		"ts-node": "10.9.2",
-		"typescript": "5.4.5"
-	}
+  "name": "pixteroid",
+  "displayName": "Pixteroid",
+  "version": "1.0.2",
+  "description": "Pixteroid is a Node.js API designed for efficient image upscaling and restoration, powered by AI and utilizing the NCNN framework. It employs Real-ESRGAN and ESRGAN model weights to upscale and restore images, providing three distinct levels of detail and size customization to suit various needs.",
+  "main": "./dist/pixteroid.js",
+  "exports": {
+    "import": "./dist/pixteroid.js",
+    "require": "./dist/pixteroid.js",
+    "types": "./dist/types/pixteroid.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "./dist/lib"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "pixteroid": "./dist/bin/setup.js"
+  },
+  "repository": "https://github.com/cresteem/pixteroid",
+  "bugs": {
+    "url": "https://github.com/cresteem/pixteroid/issues"
+  },
+  "author": "DARSAN <darsan@cresteem.com>",
+  "maintainers": [
+    "DARSAN <darsan@cresteem.com>"
+  ],
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "dev": "rimraf dist && tsc -p tscdev.json",
+    "dr": "cls && yarn dev && yarn rp",
+    "rp": "node ./dist/pixteroid.js",
+    "build": "cls && rimraf dist && tsc -p tsconfig.json",
+    "watch": "tsc --watch",
+    "clean": "cls && rimraf dist",
+    "deploy": "yarn build && yarn publish --access public && git push",
+    "postinstall": "node ./dist/bin/setup.js"
+  },
+  "keywords": [
+    "image upscaling",
+    "image restoration",
+    "ai-powered",
+    "node.js image api",
+    "ncnn framework",
+    "real-esrgan",
+    "esrgan",
+    "high-resolution images",
+    "ai image processing",
+    "detail enhancement",
+    "custom image scaling",
+    "open-source",
+    "graphic design tools",
+    "e-commerce tools",
+    "web development",
+    "photography enhancement",
+    "print media",
+    "ai research",
+    "image quality",
+    "scaling algorithms",
+    "api integration",
+    "performance optimization"
+  ],
+  "dependencies": {
+    "decompress": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/decompress": "4.2.7",
+    "@types/node": "latest",
+    "glob": "10.4.2",
+    "rimraf": "5.0.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  },
+  "homepage": "https://www.npmjs.com/package/pixteroid"
 }
