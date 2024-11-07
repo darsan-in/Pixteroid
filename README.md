@@ -313,9 +313,7 @@ I would like to extend our gratitude to [Xintao](https://github.com/xinntao) for
 <li>web development</li>
 <li>photography enhancement</li>
 <li>print media</li>
-<li>AI research</li>
 <li>image quality</li>
 <li>scaling algorithms</li>
-<li>API integration</li>
 <li>performance optimization</li>
 </ul>
