@@ -1,7 +1,7 @@
 {
   "name": "pixteroid",
   "displayName": "Pixteroid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pixteroid is a Node.js API designed for efficient image upscaling and restoration, powered by AI and utilizing the NCNN framework. It employs Real-ESRGAN and ESRGAN model weights to upscale and restore images, providing three distinct levels of detail and size customization to suit various needs.",
   "main": "./dist/pixteroid.js",
   "exports": {
@@ -68,11 +68,11 @@
   },
   "devDependencies": {
     "@types/decompress": "4.2.7",
-    "@types/node": "latest",
-    "glob": "10.4.2",
-    "rimraf": "5.0.5",
+    "@types/node": "22.10.1",
+    "glob": "11.0.0",
+    "rimraf": "6.0.1",
     "ts-node": "10.9.2",
-    "typescript": "5.4.5"
+    "typescript": "5.7.2"
   },
   "homepage": "https://www.npmjs.com/package/pixteroid"
 }

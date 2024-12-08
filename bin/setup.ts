@@ -53,7 +53,9 @@ function _downloadFile(sourceUrl: string, to: string, cb: Function): void {
 			fileStream.on("close", () => {
 				cb();
 			});
-		} else if (response.statusCode === 302) {
+		} else if (
+			[301, 302].some((statusCode) => response.statusCode === statusCode)
+		) {
 			const redirectedUrl: string = response.headers.location as string;
 			_downloadFile(redirectedUrl, to, cb);
 			return;
